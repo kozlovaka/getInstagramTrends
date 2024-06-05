@@ -1,0 +1,31 @@
+{
+  "name": "getInstagramTrends",
+  "description": "return trends from a given niche, target audience, publication type, and trend type",
+  "parameters":{
+    "type": "object",
+    "properties":{
+      "niche":{
+        "type":"string",
+        "description":"The niche of the blog"
+      },
+      "geo":{
+        "type":"string",
+        "description":"The GEO location of the target audience"
+      },
+      "publicationType":{
+        "type":"string",
+        "description":"The type of publication (post, reel, story)"
+      },
+      "trendType":{
+        "type":"string",
+        "description":"The type of trend (challenges, music, bloggers for remixes, news hook)"
+      }
+    },
+    "required":[
+      "niche",
+      "geo",
+      "publicationType",
+      "trendType"
+    ]
+  }
+}
